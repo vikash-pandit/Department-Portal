@@ -74,21 +74,24 @@ const HomePage: React.FC<HomePageProps> = ({ user, onLogout }) => {
 
   // Sample attendance data for students
   const studentAttendanceData: AttendanceRecord[] = [
-    { subjectCode: 'EE301', subjectName: 'Electrical Machines I', totalClasses: 45, attendedClasses: 38 },
-    { subjectCode: 'EE302', subjectName: 'Power Systems I', totalClasses: 40, attendedClasses: 35 },
-    { subjectCode: 'EE303', subjectName: 'Control Systems', totalClasses: 42, attendedClasses: 40 },
-    { subjectCode: 'EE304', subjectName: 'Electromagnetic Theory', totalClasses: 38, attendedClasses: 32 },
-    { subjectCode: 'EE305L', subjectName: 'Electrical Machines Lab', totalClasses: 20, attendedClasses: 18 },
-    { subjectCode: 'EE306L', subjectName: 'Power Systems Lab', totalClasses: 18, attendedClasses: 16 },
-    { subjectCode: 'EE307L', subjectName: 'Control Systems Lab', totalClasses: 16, attendedClasses: 15 },
+    { subjectCode: 'PC-EE301', subjectName: 'ELECTRIC CIRCUIT THEORY', totalClasses: 45, attendedClasses: 38 },
+    { subjectCode: 'PC-EE302', subjectName: 'ANALOG ELECTRONICS', totalClasses: 40, attendedClasses: 35 },
+    { subjectCode: 'PC-EE303', subjectName: 'ELECTROMAGNETIC FIELD THEORY', totalClasses: 42, attendedClasses: 40 },
+    { subjectCode: 'ES-ME301', subjectName: 'ENGINEERING MECHANICS', totalClasses: 38, attendedClasses: 32 },
+    { subjectCode: 'BS-M301', subjectName: 'MATHEMATICS III', totalClasses: 20, attendedClasses: 18 },
+    { subjectCode: 'BS-EE301', subjectName: 'BIOLOGY FOR ENGINEERS', totalClasses: 18, attendedClasses: 16 },
+    { subjectCode: 'MC-EE301', subjectName: 'INDIAN CONSTITUTION', totalClasses: 16, attendedClasses: 15 },
+    { subjectCode: 'PC-EE391', subjectName: 'ELECTRIC CIRCUIT THEORY LABORATORY', totalClasses: 16, attendedClasses: 15 },
+    { subjectCode: 'PC-EE392', subjectName: 'ANALOG ELECTRONICS LABORATORY', totalClasses: 16, attendedClasses: 15 },
+    { subjectCode: 'PC-CS391', subjectName: 'NUMERICAL METHODS LABORATORY', totalClasses: 16, attendedClasses: 15 },
   ];
 
   // Sample attendance data for teachers (managing students)
   const [teacherAttendanceData, setTeacherAttendanceData] = React.useState<StudentAttendanceRecord[]>([
-    { studentName: 'John Doe', rollNumber: '21EE001', subject: 'Electrical Machines I', totalClasses: 45, attendedClasses: 38 },
-    { studentName: 'Jane Smith', rollNumber: '21EE002', subject: 'Electrical Machines I', totalClasses: 45, attendedClasses: 42 },
-    { studentName: 'Michael Lee', rollNumber: '21EE003', subject: 'Electrical Machines I', totalClasses: 45, attendedClasses: 35 },
-    { studentName: 'Sarah Johnson', rollNumber: '21EE004', subject: 'Electrical Machines I', totalClasses: 45, attendedClasses: 40 },
+    { studentName: 'SHAYAN KUMAR DAS', rollNumber: '11901624001', subject: 'Electrical Machines I', totalClasses: 45, attendedClasses: 38 },
+    { studentName: 'DIVYANSH KUMAR', rollNumber: '11901624002', subject: 'Electrical Machines I', totalClasses: 45, attendedClasses: 42 },
+    { studentName: 'HIRANYA DAS', rollNumber: '11901624003', subject: 'Electrical Machines I', totalClasses: 45, attendedClasses: 35 },
+    { studentName: 'NITIN ROY', rollNumber: '11901624004', subject: 'Electrical Machines I', totalClasses: 45, attendedClasses: 40 },
   ]);
 
   const calculateAttendancePercentage = (attended: number, total: number): number => {
