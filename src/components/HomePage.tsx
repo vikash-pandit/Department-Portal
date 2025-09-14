@@ -88,10 +88,10 @@ const HomePage: React.FC<HomePageProps> = ({ user, onLogout }) => {
 
   // Sample attendance data for teachers (managing students)
   const [teacherAttendanceData, setTeacherAttendanceData] = React.useState<StudentAttendanceRecord[]>([
-    { studentName: 'SHAYAN KUMAR DAS', rollNumber: '11901624001', subject: 'Electrical Machines I', totalClasses: 45, attendedClasses: 38 },
-    { studentName: 'DIVYANSH KUMAR', rollNumber: '11901624002', subject: 'Electrical Machines I', totalClasses: 45, attendedClasses: 42 },
-    { studentName: 'HIRANYA DAS', rollNumber: '11901624003', subject: 'Electrical Machines I', totalClasses: 45, attendedClasses: 35 },
-    { studentName: 'NITIN ROY', rollNumber: '11901624004', subject: 'Electrical Machines I', totalClasses: 45, attendedClasses: 40 },
+    { studentName: 'SHAYAN KUMAR DAS', rollNumber: '11901624001', subject: 'ELECTRIC CIRCUIT THEOR', totalClasses: 45, attendedClasses: 38 },
+    { studentName: 'DIVYANSH KUMAR', rollNumber: '11901624002', subject: 'ANALOG ELECTRONICS', totalClasses: 45, attendedClasses: 42 },
+    { studentName: 'HIRANYA DAS', rollNumber: '11901624003', subject: 'ELECTROMAGNETIC FIELD THEORY', totalClasses: 45, attendedClasses: 35 },
+    { studentName: 'NITIN ROY', rollNumber: '11901624004', subject: 'MATHEMATICS III', totalClasses: 45, attendedClasses: 40 },
   ]);
 
   const calculateAttendancePercentage = (attended: number, total: number): number => {
